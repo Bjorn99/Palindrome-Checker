@@ -1,18 +1,24 @@
-//Palindrome-checker using JS//
-// 1. Read the checker string as parameter.//
-function palindromeCheck(checker) {
-  // 2. Convert the checker string as array.//
-  checker_array = checker.split("")
-  //3. Reverse the array and convert to string.//
-  let checkerOutput = checker_array.reverse().join("");
-  // 4. Compare the checker string and the reversed string. If same, you have a paindrome.//
-  if (checker = checkerOutput) {
-    console.log(checker, "is palindrome");
-  } else {
-    console.log(checker, "is not palindrome");
-  }
+const magicalwords = document.querySelector('#magicalword');
+const subBtn = document.querySelector('#submit-btn');
+const dispElm = document.querySelector('#display-message');
+
+const functionName = (args) => {
+
 }
 
-palindromeCheck("TENET");
-palindromeCheck("MOON");
-palindromeCheck("POP");
+
+subBtn.addEventListener('click', (event) => {
+  event.preventDefault();
+  const str = magicalwords.value;
+  const reversed = str.split('').reverse().join('');
+  console.log(dispElm)
+  if (str === reversed) {
+    dispElm.style.color = '#0EF686';
+    dispElm.textContent = `PALINDROME`;
+    } else {
+      dispElm.style.color = 'orange';
+      dispElm.textContent =  `NOT PALINDROME`;
+    }
+})
+//Palindrome-checker using JS//
+
