@@ -3,17 +3,46 @@
   <head>
     <meta charset="utf-8">
     <title>PC</title>
+    <link href="https://fonts.googleapis.com/css?family=Lobster"
+    rel="stylesheet" type="text/css">
+
+    <link href="pc.css" rel="stylesheet" type="text/css">
+    
   </head>
   <body>
-    <header class="welcome">Welcome to the world of palindrome checker!</header>
+
+    <nav class="navigationWrapper">
+      <div class="nav-center">
+        <h1>palindrome checker</h1>
+      </div>
+    </nav>
+
+    <div class="container">
+    <header class="welcome">Welcome to the world of palindrome!</header>
+    
     <main class= "main">
+      <div class="mw">
       <h2>Enter the magical word!</h2>
+      </div>
 
+      <div class="input">
       <form class="form">
-        <input type = "text" id="magicalword" name="magicalword"></input>
+        <input type = "text" id="magicalword" placeholder="Hit it here!">
+        <input id = "submit-btn" type = "submit" value = "Abarakadabra">
       </form>
+      </div>
 
-      <button class="btn btn-default">Abrakadabra!</button>
+      <div class="h4">
+      <h4 id="display-message"></h4>
+      </div>
+
     </main>
+    </div>
+
+    <script type="text/javascript" src="palindrome-checker.js"></script>
+
+
   </body>
 </html>
+
+
