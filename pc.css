@@ -102,7 +102,9 @@ h1{
 }
 
 .welcome:hover {
-    text-shadow: aqua;
+    opacity: 0.9; 
+    -webkit-transform: scale(0.95); 
+    transform: scale(0.95);
 }
 
 h2:hover {
