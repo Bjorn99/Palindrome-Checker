@@ -95,9 +95,16 @@ h1{
     text-shadow: #ea4f4c;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 992px) {
   .section-center {
     width: 95vw;
+  }
+
+  body {
+      padding: auto;
+      margin: auto;
+      align-items: center;
+      justify-content: center;
   }
 }
 
@@ -109,4 +116,45 @@ h1{
 
 h2:hover {
     color: aqua;
+}
+
+/****btn*****/
+.btn {
+    align-items: center;
+    padding: 1rem;
+    background-color: none;
+}
+
+#submit-btn {
+    align-items: center;
+    background-color: aqua;
+    border-radius: 20px;
+    mask-border-outset: var(--dark-shadow);
+    cursor: pointer;
+}
+
+/****************FORM************/
+.form {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+input {
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+#magicalword {
+    border-radius: 20px;
+}
+
+/****************MAIN************************/
+.mw {
+    align-items: center;
 }
