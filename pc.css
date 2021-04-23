@@ -172,3 +172,15 @@ input {
     margin-right: 1rem;
     border-top: hsl(125, 67%, 44%);
 }
+
+a {
+    color: var(--clr-green-light);
+}
+
+a:active {
+    color: cyan;
+}
+
+a:hover {
+    color: rgb(219, 202, 50);
+}
