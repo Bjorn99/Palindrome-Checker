@@ -1,0 +1,23 @@
+{
+  "name": "Palindrome-Checker",
+  "version": "1.0.0",
+  "description": "This is just a project assingment.",
+  "main": "palindrome-checker.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bjorn99/Palindrome-Checker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bjorn99/Palindrome-Checker/issues"
+  },
+  "homepage": "https://Bjorn99.github.io/Palindrome-Checker",
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
+  }
+}
