@@ -127,7 +127,7 @@ h2:hover {
 
 #submit-btn {
     align-items: center;
-    background-color: aqua;
+    background-color: rgb(3, 105, 105);
     border-radius: 20px;
     mask-border-outset: var(--dark-shadow);
     cursor: pointer;
