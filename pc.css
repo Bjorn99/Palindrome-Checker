@@ -114,15 +114,21 @@ h1{
     transform: scale(0.95);
 }
 
-h2:hover {
-    color: aqua;
-}
-
 /****btn*****/
 .btn {
     align-items: center;
     padding: 1rem;
     background-color: none;
+}
+
+
+input {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: #eee;
+    outline: none;
 }
 
 #submit-btn {
