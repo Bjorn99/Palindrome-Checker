@@ -20,8 +20,16 @@ subBtn.addEventListener('click', (event) => {
     dispElm.textContent = `PALINDROME`;
     } else {
       dispElm.style.color = 'orange';
-      dispElm.textContent =  `NOT PALINDROME`;
+      dispElm.textContent =  `Oops! It's NOT A PALINDROME`;
     }
 })
+
+function success() {
+  if(magicalwords.value==="") { 
+             subBtn.disabled = true; 
+         } else { 
+             subBtn.disabled = false;
+         }
+     }
 //Palindrome-checker using JS//
 
