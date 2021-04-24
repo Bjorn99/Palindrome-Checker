@@ -55,7 +55,6 @@
 
 body {
     font-family: "Roboto", sans-serif;
-    margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -67,12 +66,11 @@ body {
 
 /*************NAV**********/
 .navigationWrapper {
+    flex-direction: column;
     position: relative;
-    display: flex;
     text-align: center;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
     background-color: #222;
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
     color: white;
@@ -82,7 +80,6 @@ body {
 }
 
 h1{
-    padding-left: 150px;
     align-items: center;
     justify-content: center;
 }
@@ -95,17 +92,60 @@ h1{
     text-shadow: #ea4f4c;
 }
 
-@media screen and (max-width: 992px) {
-  .section-center {
-    width: 95vw;
+@media screen and (min-width: 700px) {
+
+  .navigationWrapper {
+    flex-direction: column;  
+    margin-top: 0;
+  }
+  main {
+      place-items: center;
+      display: grid;
+  }
+  h1 {
+      font-size: 2rem;
+  }
+  .container {
+      padding: 5rem;
+      margin: auto;
   }
 
   body {
+      min-height: 100vh;
+      display: flex;
       padding: auto;
-      margin: auto;
+      margin: 0;
       align-items: center;
       justify-content: center;
   }
+  .welcome {
+      font-size: 2.5rem;
+      padding-bottom: 1rem;
+  }
+  input {
+      color: black;
+      align-items: center;
+      height: 2rem;
+      width: 20rem;
+  }
+  #submit-btn {
+      height: 5rem;
+      font-size: 2.2rem;
+      font-weight: bolder;
+  }
+  
+  .footer{
+      margin: auto;
+      padding: 1rem;
+      font-size: 2rem;
+  }
+  a {
+      font-size: 2rem;
+  }
+}
+
+.welcome {
+    font-size: 2rem;
 }
 
 .welcome:hover {
@@ -123,6 +163,12 @@ h1{
 
 
 input {
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 18px;
     border-top-style: hidden;
     border-right-style: hidden;
     border-left-style: hidden;
@@ -145,15 +191,6 @@ input {
     justify-content: center;
     display: flex;
 
-}
-
-input {
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    font-family:'Times New Roman', Times, serif;
-    font-weight: bolder;
-    font-size: 18px;
 }
 
 #magicalword {
