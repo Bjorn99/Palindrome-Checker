@@ -31,7 +31,7 @@ const funnyMessages = [
 
 subBtn.addEventListener('click', (event) => {
   event.preventDefault();
-  const str = magicalwords.value;
+  const str = magicalwords.value.trim();
   const cleanedStr = str.replace(/[\W_]/g, "").toLowerCase();
   const isPalindrome = cleanedStr === cleanedStr.split("").reverse().join("");
   
@@ -55,3 +55,5 @@ function success() {
      }
 //Palindrome-checker using JS//
 
+// Enable button on input change
+magicalwords.addEventListener('input', success)
