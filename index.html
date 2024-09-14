@@ -3,43 +3,55 @@
   <head>
     <meta charset="utf-8">
     <meta name="yandex-verification" content="4e60f422cbea9bcd" />
-    <title>PC</title>
-    <link href="pc.css" rel="stylesheet" type="text/css">
+    <title>Palindrome-Checker</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet" type="text/css">
     
   </head>
-  <body>
-
-    <nav class="navigationWrapper">
-      <div class="nav-center">
-        <h1>palindrome checker</h1>
+  <body class="bg-gray-100">
+    <nav class="bg-blue-500 mx-8 rounded-lg py-4">
+      <div class="container mx-auto text-center">
+        <h1 class="text-white text-2xl font-bold">
+          Palindrome-Checker
+        </h1>
       </div>
     </nav>
 
-    <div class="container">
-    <header class="welcome">Welcome to the world of palindrome!</header>
     
-    <main class= "main">
 
-      <div class="input">
-      <form class="form">
-        <input type = "text" id="magicalword" onkeyup="success()" placeholder="Hit it here!" autofocus>
-        <div class="btn btn-hero">
-        <input id = "submit-btn" type = "submit" value = "Abarakadabra" disabled>
-        </div>
-      </form>
+    <div class="container-auto my-8 mx-8">
+    <header class="text-center mb-4">
+      <h2 class="text-2xl font-bold text-gray-800">Welcome to the 
+        world of palindromes!</h2>
+    </header>
+    
+    <main class= "bg-white p-6 rounded-lg shadow-md">
+      <div class="mb-4">
+        <form class="flex items-center rounded-md">
+          <input type = "text" id="magicalword" onkeyup="success()" 
+          placeholder="Hit it here!" autofocus class="block w-full rounded-md border-0 py-1.5 pl-7 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6 
+           focus:border-transparent">
+          
+          <div class="p-2 rounded-lg">
+            <button id = "submit-btn" type = "submit" disabled class="bg-blue-500 hover:bg-green-600 text-white font-bold py-1.5 px-10 rounded-md">
+             Abrakadabra
+            </button>
+          </div>
+        </form>
       </div>
 
-      <div class="h4">
-      <h4 id="display-message"></h4>
+      <div class="text-center">
+        <h4 id="display-message" class="text-gray-700"></h4>
       </div>
     </main>
     </div>
 
-    <div class="footer">
-      <p><strong>If you have any issues or requests regarding this website, please submit your
-        issues at this <a href="https://github.com/Bjorn99/Palindrome-Checker" target="_blank">github</a> page.
-      </strong></p>
+    <footer class="bg-gray-800 text-white py-4">
+      <div class="container mx-auto text-center">
+        <p>If you have any issues or requests regarding this website, please submit your
+        issues at this <a href="https://github.com/Bjorn99/Palindrome-Checker" target="_blank" class="text-blue-400 hover:underline">github</a> page.
+        </p>
     </div>
+    </footer>
 
     <script type="text/javascript" src="palindrome-checker.js"></script>
 
